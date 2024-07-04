@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <marquee width="100%" loop="6" direction="right" scrollamout="10" style="margin-top: 10px;color: aliceblue; font-size: x-large; font-family: cursive;height: auto;">
+        Welcome to Kowsik's Tic-Tac-Toe
+    </marquee>
+    <div class="bdd"> 
+    <div class="container" id="choose-side-container">
+        <h1 class="logo">Tic-Tac-Toe</h1>
+        <div class="choose-side">
+            <p>Choose Your Side</p>
+            <button class="choose-btn" id="choose-x">X</button>
+            <button class="choose-btn" id="choose-o">O</button>
+        </div>
+    </div>
+    <div class="container" id="choose-mode-container" style="display: none;">
+        <div style="display: flex;">
+            <button class="choose-btn" id="back-side" style="margin-left: 0px;height: 40px; width: 40px; padding-left: 12px; border-radius: 50%; display: inline-block;">&#8617;</button>
+            <h1 class="logo" style="margin: 0;">Tic-Tac-Toe</h1>
+        </div>
+        
+        <div class="choose-side">
+            <p>Choose Game Mode</p>
+            <button class="choose-btn" id="single-player">👤 </button>
+            <button class="choose-btn" id="multiplayer">👥 </button>
+        </div>
+    </div>
+    <div class="container" id="choose-difficulty-container" style="display: none;">
+        <div style="display: flex;">
+            <button class="choose-btn" id="back-mode" style="margin-left: 0px;height: 40px; width: 40px; padding-left: 12px; border-radius: 50%; display: inline-block;">&#8617;</button>
+            <h1 class="logo" style="margin: 0;">Tic-Tac-Toe</h1>
+        </div>
+        <div class="choose-difficulty">
+            <p style="color: white;">Choose Difficulty</p>
+            <button class="choose-btn" id="easy">Easy</button>
+            <button class="choose-btn" id="medium">Medium</button>
+            <button class="choose-btn" id="hard">Hard</button>
+        </div>
+    </div>
+    <div class="container" id="game-container" style="display: none;">
+        <div style="display: flex;">
+            <button class="choose-btn" id="back-diff" style="margin-left: 0px;height: 40px; width: 40px; padding-left: 12px; border-radius: 50%; display: inline-block;">&#8617;</button>
+            <h1 class="logo" style="margin: 0;">Tic-Tac-Toe</h1>
+        </div>
+        <div id="status">Player X's turn</div>
+        <div id="board"></div>
+        <button id="reset">Reset</button>
+        <button id="home1">Home</button>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-status"></div>
+            <div id="scoreboard">
+                <div id="player-x">Player X: <span id="player-x-score">0</span></div>
+                <div id="player-o">Player O: <span id="player-o-score">0</span></div>
+                <div id="draws">Draws: <span id="draws-count">0</span></div>
+            </div>
+            <button id="play-again">Play Again</button>
+            <button id="home2">Home</button>
+        </div>
+    </div>
+</div>
+<footer style="color: gold;margin-left: 34%;">
+    Thanks for playing the game!😊
+    Feel free to <a href="https://www.linkedin.com/in/medam-kowsik-975479282/" style="color: aqua;">contact</a> us for more games
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
